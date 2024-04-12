@@ -1,0 +1,55 @@
+.LocationsSection {
+    width: 1200px;
+    height: 530px;
+    padding-left: 88px;
+    font-size: 32px;
+    color: #00112e;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 0.0625rem solid #00112e;
+    border-right: 0.0625rem solid #00112e;
+    border-top-right-radius: 6rem;
+    position: relative;
+    margin-top: 225px;
+}
+
+.LocationsSection::before {
+    content: "OUR LOCATIONS";
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00358d;
+    top: -10px;
+    left: 0;
+    background-color: white;
+    border-top-right-radius: 6rem;
+    padding-left: 88px;
+    padding-right: 88px;
+}
+
+.loc-sec-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 200px;
+    border: 0.0625rem solid #99aed1;
+    border-radius: 2rem;
+    margin-top: 50px;
+}
+
+.loc-sec-content {
+    width: 70%;
+    line-height: 1.5;
+}
+
+.loc-sec-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #00358d;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
