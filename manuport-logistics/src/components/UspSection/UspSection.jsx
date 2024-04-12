@@ -4,7 +4,6 @@ import "./UspSection.css";
 export default function UspSection() {
     const [visibleIndex, setVisibleIndex] = useState(0);
     const [progress, setProgress] = useState(0);
-    const [currentImage, setCurrentImage] = useState("");
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -56,6 +55,8 @@ export default function UspSection() {
         "https://a.storyblok.com/f/240783/632x796/2481202365/sandra.jpg/m/1024x560",
         "https://a.storyblok.com/f/240783/1920x781/6e425f1422/untitled_compressed.png/m/1024x560",
     ];
+
+    const [currentImage, setCurrentImage] = useState(images[0]);
 
     return (
         <div className="UspSection">
