@@ -1,6 +1,95 @@
 .UspSection {
     height: 984px;
     background-color: #00358d;
-    padding: 160px 0px;
+    padding: 160px 88px;
     border-radius: 50px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.usp-left {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-family: "Exo", sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+}
+
+.usp-left p {
+    position: relative;
+    top: -80px;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-0 {
+    margin-top: 0;
+}
+
+.image-1 {
+    margin-top: 75px;
+}
+
+.image-2 {
+    margin-top: 150px;
+}
+
+.image-3 {
+    margin-top: 225px;
+}
+
+.usp-left img {
+    width: 440px;
+    border-radius: 40px;
+}
+
+.usp-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    line-height: 2;
+}
+
+.usp-item {
+    padding: 0px 32px 32px;
+}
+
+.usp-item-title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.usp-item-content {
+    font-size: 16px;
+    transition: display 0.3s fade-in;
+}
+
+.usp-item-progress {
+    width: 100%;
+    height: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.usp-item-progress::-webkit-progress-bar {
+    background-color: #335da3;
+}
+
+/* Change the progress color (i.e., the "filled" part) */
+.usp-item-progress::-webkit-progress-value {
+    background-color: #fff;
+}
+
+.inactive {
+    color: #fff;
+    opacity: 0.4;
 }
