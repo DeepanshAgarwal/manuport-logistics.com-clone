@@ -1,1 +1,55 @@
+.navbar-secondary {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+    padding: 4px 88px;
+    background-color: #ccd6e824;
+}
 
+.nav-sec-elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 0px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #335da3;
+}
+
+.nav-sec-elem:nth-child(1),
+.nav-sec-elem:nth-child(2) {
+    padding-right: 17px;
+    border-right: 1px solid black;
+}
+
+.navbar-primary {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 40px;
+    padding: 24px 88px;
+    position: relative;
+}
+
+.nav-prim-elem {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00112e;
+}
+
+.main-logo {
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
