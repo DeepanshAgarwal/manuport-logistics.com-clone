@@ -53,3 +53,22 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (width < 768px) {
+    .LocationsSection {
+        width: 100%;
+        height: auto;
+        padding: 0px 16px;
+        border: none;
+    }
+    .loc-sec-content {
+        width: 100%;
+        font-size: 22px;
+    }
+    .LocationsSection::before {
+        top: -60px;
+        left: 0;
+        padding: 0px;
+        padding-left: 16px;
+    }
+}

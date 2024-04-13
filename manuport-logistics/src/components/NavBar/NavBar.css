@@ -137,3 +137,27 @@
     animation: slideDown 1s ease-in-out 1s forwards;
     cursor: pointer;
 }
+
+.menu-icon {
+    display: none;
+}
+
+@media (width <= 768px) {
+    .nav-prim-elem {
+        display: none;
+    }
+    .navbar-secondary {
+        display: none;
+    }
+    .menu-icon {
+        font-size: 48px;
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+    .main-logo {
+        left: 20px;
+    }
+}

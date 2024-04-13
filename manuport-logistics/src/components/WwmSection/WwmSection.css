@@ -84,3 +84,99 @@
     height: 100%;
     object-fit: cover;
 }
+
+@media (width < 768px) {
+    .WwmSection {
+        padding: 0px 16px;
+        margin: 200px 0px;
+        height: 450px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wwm-images {
+        /* display: none; */
+        position: relative;
+        top: -200px;
+
+        height: 70%;
+        width: 70%;
+        z-index: 1;
+    }
+
+    .wwm-content {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #00235d;
+        background: radial-gradient(ellipse at center, #003690 0, #00235d 100%);
+        border-radius: 0px;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .wwm-title,
+    .wwm-description,
+    .wwm-btn-wrapper {
+        padding: 0px 16px;
+        width: 100%;
+        color: white;
+        margin-right: 0px;
+        /* text-align: center; */
+    }
+
+    .wwm-title {
+        height: 64px;
+        font-family: "Exo", sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .wwm-description {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .wwm-btn-wrapper {
+        /* width: 50%; */
+        padding: 8px;
+        display: inline-flex;
+        border: #fff 1px solid;
+        border-radius: 32px;
+    }
+
+    .wwm-btn {
+        height: 32px;
+        margin-left: 24px;
+        margin-right: 0px;
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        justify-self: center;
+    }
+
+    @keyframes wwm-slideUp {
+        0% {
+            opacity: 0;
+            transform: translateX(50%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .wwm-images-img {
+        animation: wwm-slideUp 0.5s ease-out;
+        height: 100%;
+        object-fit: cover;
+    }
+}

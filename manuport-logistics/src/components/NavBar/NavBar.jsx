@@ -1,4 +1,5 @@
 import "./NavBar.css";
+import { IoMenu } from "react-icons/io5";
 import mainLogo from "../../assets/main-logo.png";
 
 export default function NavBar() {
@@ -19,6 +20,9 @@ export default function NavBar() {
                 <div className="nav-prim-elem">About</div>
                 <div className="nav-prim-elem">EGS</div>
                 <div className="nav-prim-elem">Contact</div>
+                <div className="menu-icon">
+                    <IoMenu />
+                </div>
             </div>
         </div>
     );

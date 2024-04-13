@@ -93,3 +93,37 @@
     color: #fff;
     opacity: 0.4;
 }
+
+@media (width < 768px) {
+    .UspSection {
+        padding: 160px 16px;
+        border-radius: 0;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .image-0,
+    .image-1,
+    .image-2,
+    .image-3 {
+        margin-top: 0;
+    }
+    .usp-left {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .usp-left p {
+        font-size: 48px;
+        text-align: center;
+    }
+    .usp-left img {
+        width: 100%;
+    }
+    .usp-item {
+        padding: 0px 0px 32px;
+    }
+    .usp-item-title {
+        font-size: 22px;
+    }
+}
