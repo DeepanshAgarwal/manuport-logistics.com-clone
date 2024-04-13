@@ -62,9 +62,21 @@ export default function UspSection() {
         <div className="UspSection">
             <div className="usp-left">
                 <p>We're Different Because</p>
-                <div className={`image-container image-${visibleIndex}`}>
-                    <img src={currentImage} />
-                </div>
+                {images.map((image, index) => (
+                    <div
+                        className={`image-container image-${index}`}
+                        key={index}
+                        style={{
+                            opacity: visibleIndex === index ? 1 : 0,
+                            height: visibleIndex === index ? "auto" : "0",
+                            overflow: "hidden",
+                            transition:
+                                "opacity 0.5s linear, height 0.5s linear",
+                        }}
+                    >
+                        <img src={image} />
+                    </div>
+                ))}
             </div>
             <div className="usp-right">
                 {titles.map((title, index) => (
@@ -84,8 +96,11 @@ export default function UspSection() {
                                 index + 1
                             }`}
                             style={{
-                                display:
-                                    visibleIndex === index ? "block" : "none",
+                                opacity: visibleIndex === index ? 1 : 0,
+                                height: visibleIndex === index ? "auto" : "0",
+                                overflow: "hidden",
+                                transition:
+                                    "opacity 0.5s linear, height 0.5s linear",
                             }}
                         >
                             {contents[index]}

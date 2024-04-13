@@ -6,6 +6,19 @@
     gap: 10px;
     padding: 4px 88px;
     background-color: #ccd6e824;
+    opacity: 0;
+    animation: slideDown 1s ease-in-out 2s forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-0.4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .nav-sec-elem {
@@ -16,6 +29,11 @@
     font-size: 12px;
     font-weight: 600;
     color: #335da3;
+}
+
+.nav-sec-elem:hover {
+    color: #00112e;
+    cursor: pointer;
 }
 
 .nav-sec-elem:nth-child(1),
@@ -42,6 +60,69 @@
     font-size: 16px;
     font-weight: 700;
     color: #00112e;
+    opacity: 0;
+    position: relative;
+}
+
+.nav-prim-elem:hover {
+    color: #335da3;
+    cursor: pointer;
+}
+
+.nav-prim-elem::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 5'%3E%3Cpath d='M0 5 Q5 0 10 5 Q15 0 20 5' stroke='%23335da3' stroke-width='2' fill='none' /%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 20px 5px;
+    transform: translateX(-50%);
+    clip-path: inset(0 0 0 100%);
+    transition: clip-path 0.5s ease-in-out;
+}
+
+.nav-prim-elem:hover::after {
+    clip-path: inset(0);
+}
+
+.nav-prim-elem:nth-child(2) {
+    animation: slideUp 0.2s ease-in-out 1s forwards;
+}
+.nav-prim-elem:nth-child(3) {
+    animation: slideUp 0.2s ease-in-out 1.2s forwards;
+}
+.nav-prim-elem:nth-child(4) {
+    animation: slideUp 0.2s ease-in-out 1.4s forwards;
+}
+.nav-prim-elem:nth-child(5) {
+    animation: slideUp 0.2s ease-in-out 1.6s forwards;
+}
+.nav-prim-elem:nth-child(6) {
+    animation: slideUp 0.2s ease-in-out 1.8s forwards;
+}
+.nav-prim-elem:nth-child(7) {
+    animation: slideUp 0.2s ease-in-out 2s forwards;
+}
+.nav-prim-elem:nth-child(8) {
+    animation: slideUp 0.2s ease-in-out 2.2s forwards;
+}
+.nav-prim-elem:nth-child(9) {
+    animation: slideUp 0.2s ease-in-out 2.4s forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(0.4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .main-logo {
@@ -52,4 +133,7 @@
     top: 20px;
     background-size: contain;
     background-repeat: no-repeat;
+    opacity: 0;
+    animation: slideDown 1s ease-in-out 1s forwards;
+    cursor: pointer;
 }
